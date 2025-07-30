@@ -1,4 +1,4 @@
-# 👋 Hi, I'm FUKUO TANNAKA
+# 👋 Hi, I'm F.T.
 
 ## 💼 About Me
 

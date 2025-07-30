@@ -2,48 +2,56 @@
 
 ## 💼 About Me
 
-- 💻 Python・データ分析を学習・実践中の障がい者雇用ワーカー
-- 🏡 完全在宅での業務経験あり（例：ニュースデータ分析、トレンド可視化、Webスクレイピング）
-- 🎯 目標：自宅からでも価値を提供できる実務スキルを継続的に習得・発信していくこと
+- 💻 Pythonを中心に、データ処理・業務自動化のスキルを少しずつ実務に落とし込んでいる在宅ワーカー（身体障がい1級）
+- 🏡 ニュース収集やデータ整理など、リモート環境での作業に慣れてきました
+- 🔄 日々の小さな開発や改善を通じて、効率的な情報活用の形を探っています
+- 🌿 体調も安定してきたので、勉強や就職活動も少しずつ前に進めています
+- 🎯 数年かけて、在宅で安定した働き方と収入の両立を目指しています
 
 ---
 
 ## 🔧 Skills & Tools
 
-| 分野        | 使用技術・ツール                     |
-|-------------|--------------------------------------|
-| データ分析   | `Python`（pandas, matplotlib, sklearn, pytrends） |
-| 情報収集     | `feedparser`, `Google News RSS`, `Selenium`, `Scrapy` |
-| 自動処理     | `GAS`, `gspread`, `pickle`, `csv`, `SQLite`, `Excel` |
-| 可視化       | `matplotlib`, `Google Sheets`, `条件付き書式（GAS）` |
-| その他       | `VS Code`, `GitHub`, `Jupyter Notebook`, `Janome`（形態素解析） |
+| 分野        | 使用技術・ツール                                                                |
+|-------------|---------------------------------------------------------------------------------|
+| データ分析   | `Python`（pandas, matplotlib, sklearn, pytrends）                              |
+| 情報収集     | `feedparser`, `Google News RSS`, `Selenium`, `Scrapy`, `requests`, `BeautifulSoup` |
+| 自動処理     | `GAS`, `gspread`, `pickle`, `csv`, `openpyxl`, `SQLite`, `Excel`              |
+| 可視化       | `matplotlib`, `Google Sheets`, `条件付き書式（GAS）`                           |
+| 日本語処理   | `Janome`, `re`, `collections`, `TF-IDF`, `共起語分析`など                         |
+| 環境構築     | `VS Code`, `GitHub`, `Jupyter Notebook`, `virtualenv`など                      |
 
 ---
 
 ## 📈 最近のプロジェクト
 
-### 🔹 [日本株定点観測ツール]
-Nikkei・MoneyWorld・SBI証券などの公開データを統合・可視化。
+### 🔹 日本株 定点観測ツール（Python × GAS × Google Sheets）
 
-- `nikkei.py`：日経の企業コンセンサス一覧をScrapyでクロール
-- `sbi_scraper.py`：SBI証券の財務・業績情報を自動取得し保存（HTML→辞書→CSV/SQLite）
-- `merge_and_store.py`：複数ソースからの企業情報を統合して保存
-- `set_conditional_formatting.gs`：GASによるGoogleスプレッドシートへの条件付き書式設定
+いくつかのWeb情報（株価・業績など）を定期的に取得・加工・可視化し、Google Sheetsにまとめる仕組みを構築中。
 
-➡️ 実務を想定した在宅データ収集・可視化ワークフローを構築
+- Webスクレイピング（Nikkei, MoneyWorld, SBI証券）
+- SQLiteを用いたデータ保存と加工
+- GASによる条件付き書式の自動化
+- 定期運用を想定した構成に調整中
 
-### 🔹 [ニュース×トレンド分析パイプライン]
-RSSニュースの収集からトレンド可視化・バズ指数算出までを自動化。
-
-- `fetch_news.py`：Googleニュース（RSS）からビジネス系記事を収集
-- `extract_keywords.py`：TF-IDFによる頻出語・重要語の抽出
-- `google_trends.py`：キーワードとGoogleトレンドの照合・ピーク検出
-- `process_data.py`：話題度スコアの算出、トレンド要約出力
+➡️ 情報収集から整理・可視化までの流れを意識したプロジェクト
 
 ---
 
-## 🧩 その他の特徴
+### 🔹 ニュース × トレンド分析（自動バズ指数の試行）
 
-- 障がい者雇用（身体1級）× 完全在宅 × 転職活動中
-- 実務ベースの学習と、自主プロジェクトによる成果物を継続公開中
-- GitHubを通じて職務能力・スキルの見える化を推進
+Google News RSSを使い、話題のニュースからキーワードを抽出し、トレンドの変化を簡易スコア化。
+
+- TF-IDFと形態素解析によるキーワード抽出
+- Google Trendsとの照合で「話題度」の目安を計算
+- Pythonによるデータ整形と自動ログ保存
+
+➡️ ニュースの定量評価と分析の一歩目として取り組み中
+
+---
+
+## 🧩 補足的な情報
+
+- 🌱 障がい者雇用 × 在宅ワークという形で実務に接する機会を少しずつ増やしています
+- 🔧 自主的な開発やスクリプト整理を通じて、スキルや仕事の進め方を見直し中
+- 📊 小規模なツールやDB連携などを積み上げながら、できる範囲の実績を整備しています

@@ -1,16 +1,82 @@
-## Hi there 👋
 
-<!--
-**data2900/data2900** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+📊 学習・実践プロジェクト
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+このリポジトリは、生成AI（ChatGPT）を活用しながら自主的に学習・構築した成果です。
+AIの提案を参考にしつつ、自身で検証・改良を重ね、実務を意識した形で仕上げています。
+
+⸻
+
+💼 About Me
+
+Pythonを活用したデータ処理や業務効率化スクリプトを日々作成しながら、実務に近い形でのスキル習得を進めています。
+リモート環境でのデータ収集・整理や小規模DBの運用に慣れ、ツール改善や自動化を通じて効率的に作業を行っています。
+
+近年は体調も安定してきたため、学び直しと就職活動に取り組んでおり、在宅勤務を中心にデータ活用の実務経験を広げたいと考えています。
+将来的には、収集したデータを基盤に シンプルな機械学習やBIツールを用いた可視化・予測モデル構築 に挑戦し、データから価値を生み出せる働き方を目指しています。
+
+⸻
+
+🔧 Skills & Tools
+
+（ChatGPTを活用しつつ実務を想定して習得）
+
+分野	使用技術・ツール
+データ分析	Python（pandas, matplotlib, sklearn, pytrends）
+情報収集	feedparser, Google News RSS, Selenium, Scrapy, requests, BeautifulSoup, Playwright
+自動処理	GAS, gspread, pickle, csv, openpyxl, SQLite, Excel
+可視化	matplotlib, Google Sheets, 条件付き書式（GAS）, BIツール学習中
+日本語処理	Janome, re, collections, TF-IDF, 共起語分析, Transformers（Hugging Face）
+環境構築	VS Code, GitHub, Jupyter Notebook, virtualenv
+
+
+⸻
+
+📈 プロジェクト例
+
+（生成AIを活用しつつ、自身で設計・改良）
+
+🔹 テキスト分析・感情スコアリング
+	•	保存済みテキスト（会社概要・業績動向・リスク説明など）を対象に感情推定
+	•	Hugging Face の日本語BERTモデルを活用し、ポジティブ／ネガティブをスコア化
+	•	横持ちテーブルにフィールド別スコアと summary コメントを保存
+	•	例: 「総合的にポジティブ」「ややネガティブ」などの文章サマリーを自動生成
+
+➡️ テキスト情報を「数値化」してDBに蓄積し、分析に活用する試み
+
+⸻
+
+🔹 定点観測ツール
+	•	Web上の公開データを収集し、SQLiteに保存
+	•	Google Sheetsと連携し、条件付き書式やグラフ化を自動化
+	•	定期運用を意識した構成
+
+➡️ 情報収集から整理・可視化までの一連の流れを実践
+
+⸻
+
+🔹 汎用スクレイパー群（学習用サンプル）
+	•	Playwright / Scrapy / Selenium を利用し、複数ソースからの情報を統合
+	•	共通DBに格納し、後続の分析処理に活用できる形へ整形
+
+➡️ 複数ソースを横断し、データを統合・標準化
+
+⸻
+
+🔹 ニュース × トレンド分析（自動バズ指数）
+	•	Google News RSSを利用し話題ニュースを自動収集
+	•	TF-IDFと形態素解析によるキーワード抽出
+	•	Google Trendsと照合して「話題度」を数値化
+	•	Pythonでログを自動保存
+
+➡️ ニュースの定量評価・分析の実践
+
+⸻
+
+🚀 今後挑戦したいこと
+	•	機械学習の導入
+蓄積データを使って、シンプルな予測モデルを試作
+	•	データの見える化
+BIツールや可視化基盤を活用
+	•	複数データの統合
+ニュース・数値データなどを組み合わせ、予測やレコメンド機能に応用
